@@ -44,11 +44,11 @@ int compute_score(string word)
         {
             if (isupper(word[i]))
             {
-                position = word[i] - 65;
+                position = word[i];
             }
             else
             {
-                position = word[i] - 97;
+                position = word[i] - 32;
             }
             score += points [position];
         }
