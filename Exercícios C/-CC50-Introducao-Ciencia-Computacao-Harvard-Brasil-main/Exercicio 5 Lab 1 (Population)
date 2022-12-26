@@ -1,0 +1,34 @@
+#include <cs50.h>
+#include <stdio.h>
+#include <math.h>
+
+int main(void)
+{
+    int pi, pf, n;
+
+    do
+    {
+    pi = get_int ("População inicial: ");
+    }
+    while (pi <= 9);
+
+    do
+    {
+    pf = get_int ("População final: ");
+    }
+    while (pf < pi);
+
+    int anos=0;
+    do
+    {
+    pi = pi + (pi/3 - pi/4);
+    anos++;
+    }
+    while (pi < pf);
+
+  printf("Total de Anos: %i\n", anos);
+}
+
+
+
+
