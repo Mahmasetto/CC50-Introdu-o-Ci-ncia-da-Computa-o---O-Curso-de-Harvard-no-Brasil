@@ -1,7 +1,6 @@
 #include <cs50.h>
 #include <string.h>
 #include <stdio.h>
-#include <math.h>
 #include <ctype.h>
 
 //Pontos para cada letra em ordem alfabética
