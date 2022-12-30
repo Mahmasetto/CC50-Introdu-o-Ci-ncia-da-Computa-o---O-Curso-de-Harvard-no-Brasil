@@ -4,13 +4,14 @@
 
 int main(void)
 {
-    int pi, pf, n;
+    int pi, pf;
+    int anos=0;
 
     do
     {
     pi = get_int ("População inicial: ");
     }
-    while (pi <= 9);
+    while (pi < 9);
 
     do
     {
@@ -18,7 +19,12 @@ int main(void)
     }
     while (pf < pi);
 
-    int anos=0;
+     if(pi == pf)
+    {
+        printf("Years: %i\n", anos);
+    }
+    else
+    {
     do
     {
     pi = pi + (pi/3 - pi/4);
@@ -26,8 +32,13 @@ int main(void)
     }
     while (pi < pf);
 
-  printf("Total de Anos: %i\n", anos);
+    if (anos >=1)
+  {
+    printf("Years: %i\n", anos);
+  }
 }
+}
+
 
 
 
